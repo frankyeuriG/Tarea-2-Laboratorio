@@ -1,0 +1,14 @@
+@page "/ocupacion"
+@page "/ocupacion/{OcupacionId:int}"
+
+
+@*Reciir la bll de ocupaciones inyectada*@
+@inject OcupacionesBLL ocupacionesBll
+
+
+@code {
+    [Parameter]
+
+    public int OcupacionId {get; set; }
+
+}
