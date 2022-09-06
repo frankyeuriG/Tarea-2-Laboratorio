@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Registro.Data;
 using Microsoft.EntityFrameworkCore;
+using Registro.BLL;
+using Radzen;
+using Registro.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,10 @@ builder.Services.AddDbContext<Contexto>(options =>
     options.UseSqlite(ConStr)
 );
 
+builder.Services.AddScoped<OcupacionesBLL>();
 // Add services to the container.
+
+builder.Services.AddScoped<NotificationService>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 

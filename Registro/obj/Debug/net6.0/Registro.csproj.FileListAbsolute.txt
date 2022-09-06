@@ -53,3 +53,5 @@ C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\obj\Debug\net6.0\re
 C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\obj\Debug\net6.0\Registro.pdb
 C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\obj\Debug\net6.0\Registro.genruntimeconfig.cache
 C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\obj\Debug\net6.0\ref\Registro.dll
+C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\bin\Debug\net6.0\Radzen.Blazor.dll
+C:\Users\frank\Desktop\Aplicada1\Tareas Laboratorio\Registro\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll

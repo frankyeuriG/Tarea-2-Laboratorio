@@ -1,11 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using Registro.Models;
 
-public class Contexto: DbContext
+namespace Registro.DAL
 {
-    public DbSet<Ocupaciones> Ocupaciones {get; set;}
-
-    public Contexto(DbContextOptions<Contexto>options): base(options)
+    public class Contexto : DbContext
     {
+        public DbSet<Ocupaciones> Ocupaciones { get; set; }
+
+        public Contexto(DbContextOptions<Contexto> options) : base(options)
+        {
+        }
 
     }
 }

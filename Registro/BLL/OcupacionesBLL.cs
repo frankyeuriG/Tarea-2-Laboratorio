@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
+using Registro.BLL;
+using Registro.Models;
+using Registro.DAL;
+
+
 
 namespace Registro.BLL
 {
@@ -16,10 +17,10 @@ public class OcupacionesBLL{
         _contexto = contexto;
     }
 
-    public bool Existe(int OcupacionId)
+    public bool Existe(int ocupacionId)
     {
         return _contexto.Ocupaciones
-            .Any(o => o.OcupacionId == OcupacionId);
+            .Any(o => o.OcupacionId == ocupacionId);
     }
     private bool Insertar(Ocupaciones ocupacion)
     {
@@ -54,8 +55,13 @@ public class OcupacionesBLL{
         .SingleOrDefault();
     }
 
-     
+    public List<Ocupaciones> GetList(Expression<Func<Ocupaciones, bool>> Criterio){
+            return _contexto.Ocupaciones
+                .AsNoTracking()
+                .Where(Criterio)
+                .ToList();
+
+        }
 
 }
-
 }
