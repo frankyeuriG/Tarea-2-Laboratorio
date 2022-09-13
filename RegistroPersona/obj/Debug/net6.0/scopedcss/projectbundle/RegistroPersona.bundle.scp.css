@@ -1,0 +1,134 @@
+/* _content/RegistroPersona/Shared/MainLayout.razor.rz.scp.css */
+.page[b-iro5ztbvn8] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-iro5ztbvn8] {
+    flex: 1;
+}
+
+.sidebar[b-iro5ztbvn8] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-iro5ztbvn8] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-iro5ztbvn8]  a, .top-row .btn-link[b-iro5ztbvn8] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-iro5ztbvn8] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-iro5ztbvn8] {
+        display: none;
+    }
+
+    .top-row.auth[b-iro5ztbvn8] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-iro5ztbvn8], .top-row .btn-link[b-iro5ztbvn8] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-iro5ztbvn8] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-iro5ztbvn8] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-iro5ztbvn8] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-iro5ztbvn8], article[b-iro5ztbvn8] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/RegistroPersona/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-mkbea7dtvq] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-mkbea7dtvq] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-mkbea7dtvq] {
+    font-size: 1.1rem;
+}
+
+.oi[b-mkbea7dtvq] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-mkbea7dtvq] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-mkbea7dtvq] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-mkbea7dtvq] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-mkbea7dtvq]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-mkbea7dtvq]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-mkbea7dtvq]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-mkbea7dtvq] {
+        display: none;
+    }
+
+    .collapse[b-mkbea7dtvq] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
